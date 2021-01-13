@@ -52,15 +52,14 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I am an Anime themed group management bot.
-Build by weebs for weebs, I specialize in managing anime and similar themed groups.
+I am for the channel names Mod Apk Discuss.
+Still you need to use me you can.
 You can find my list of available commands with /help.
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I'm a Hero For Fun and help admins manage their groups with One Punch! Have a look at the following for an idea of some of \
-the things I can help you with.
+Hey My name is *{}*.
+ I will help you to manage in your Telegram Group.
 
 *Main* commands available:
  • /help: PM's you this message.
@@ -200,27 +199,27 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="☑️ Add Saitama to your group",
+                            text="Add Me to your group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
                      [
                          InlineKeyboardButton(
-                             text="🚑 Support Group",
-                             url=f"https://t.me/{SUPPORT_CHAT}"),
+                             text="Mod Apk Group",
+                             url=f"https://t.me/Apk_mods2"),
                          InlineKeyboardButton(
-                             text="🔔 Updates Channel",
-                             url="https://t.me/OnePunchUpdates")
+                             text="Mod Apk Channel",
+                             url="https://t.me/mod_apks_st")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="🧾 Getting started guide",
-                             url="https://t.me/OnePunchUpdates/29")
+                             text="YouTube",
+                             url="https://youtube.com/channel/UCVOfAcLK0YYiF18MzsmJrVA")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="🗄 Source code",
-                             url="https://github.com/AnimeKaizoku/SaitamaRobot")
+                             text="Instagram",
+                             url="https://www.instagram.com/invites/contact/?i=ilxzn0ejaua1&utm_content=knih1sd")
                      ]]))
     else:
         update.effective_message.reply_text(
